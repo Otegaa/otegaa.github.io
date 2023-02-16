@@ -59,8 +59,7 @@ body {
     gap: 12px;
     align-items: flex-start;
     padding: 120px 24px;
-    background-image: cover url(./assets/images/Illustration-header.png)
-      no-repeat;
+    background-image: url(./assets/images/Illustration-header.png);
   }
 
   .about h1 {
