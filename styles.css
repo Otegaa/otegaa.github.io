@@ -5,3 +5,97 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 375px) {
+  .main-header {
+    width: 23.45rem;
+    height: 3rem;
+    padding: 15px 0;
+
+    background-color: #3c3a39;
+  }
+
+  /* .phone-display {
+    display: flex;
+  }
+
+  .time {
+    width: 4.5rem;
+    margin-right: 9.7rem;
+    font-weight: bold;
+  }
+  .phone-connection {
+    width: 5rem;
+    margin-left: 6rem;
+  } */
+
+  .info {
+    display: flex;
+    /* margin-top: 0.3rem; */
+    justify-content: space-between;
+  }
+
+  .info a {
+    font-size: 1rem;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    padding-left: 1rem;
+    text-decoration: none;
+  }
+
+  .info img {
+    padding-right: 1rem;
+  }
+
+  .about {
+    height: 40rem;
+    background: #1c1a19;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 120px 24px;
+  }
+
+  .about h1 {
+    color: #ff6b00;
+    font-size: 56px;
+    line-height: 64px;
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    text-transform: capitalize;
+  }
+
+  .about h2 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .about p {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .social-icons ul {
+    display: flex;
+    list-style: none;
+    width: 10rem;
+    height: 2rem;
+  }
+
+  .social-icons ul li a {
+    margin-right: 1rem;
+  }
+}
