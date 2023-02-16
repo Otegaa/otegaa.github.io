@@ -48,8 +48,8 @@
 
 > Describe between 1-3 key features of the application.
 
-- **[Mobile-responsiveness]**
-- **[Use of figma to design]**
+- **[It has a header for navigation]**
+- **[There is a headline section to know more about me and click on the links to connect with me directly]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

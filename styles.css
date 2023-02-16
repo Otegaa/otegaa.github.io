@@ -12,25 +12,10 @@ body {
 
 @media screen and (min-width: 375px) {
   .main-header {
-    width: 23.45rem;
     height: 3rem;
     padding: 15px 0;
     background-color: #3c3a39;
   }
-
-  /* .phone-display {
-    display: flex;
-  }
-
-  .time {
-    width: 4.5rem;
-    margin-right: 9.7rem;
-    font-weight: bold;
-  }
-  .phone-connection {
-    width: 5rem;
-    margin-left: 6rem;
-  } */
 
   .info {
     display: flex;
@@ -51,15 +36,18 @@ body {
   }
 
   .about {
-    height: 40rem;
-    background: #1c1a19;
+    height: 37rem;
+    background-color: #1c1a19;
     display: flex;
     flex-direction: column;
     flex: 1;
     gap: 12px;
     align-items: flex-start;
     padding: 120px 24px;
-    background-image: url(./assets/images/Illustration-header.png);
+    background-image: url(/assets/images/Illustration-header.png);
+    background-position: 120% 100%;
+    background-size: 120px 200px;
+    background-repeat: no-repeat;
   }
 
   .about h1 {
@@ -94,11 +82,8 @@ body {
     height: 2rem;
   }
 
-  .social-icons ul li a {
+  .img-tag {
     margin-right: 1rem;
-  }
-
-  .img-tag:hover {
-    color: #ff6b00;
+    padding-top: 1rem;
   }
 }
