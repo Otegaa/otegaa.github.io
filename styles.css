@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 375px) {
@@ -15,7 +15,6 @@ body {
     width: 23.45rem;
     height: 3rem;
     padding: 15px 0;
-
     background-color: #3c3a39;
   }
 
@@ -35,7 +34,6 @@ body {
 
   .info {
     display: flex;
-    /* margin-top: 0.3rem; */
     justify-content: space-between;
   }
 
@@ -61,6 +59,8 @@ body {
     gap: 12px;
     align-items: flex-start;
     padding: 120px 24px;
+    background-image: cover url(./assets/images/Illustration-header.png)
+      no-repeat;
   }
 
   .about h1 {
@@ -97,5 +97,9 @@ body {
 
   .social-icons ul li a {
     margin-right: 1rem;
+  }
+
+  .img-tag:hover {
+    color: #ff6b00;
   }
 }
