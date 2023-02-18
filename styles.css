@@ -200,10 +200,7 @@ body {
 
   .work-2 {
     background-image:
-      linear-gradient(
-        rgba(38, 38, 38, 0) 0.75%,
-        rgba(38, 38, 38, 0.4) 61.94%
-      ),
+      linear-gradient(#26262600 0.75%, #26262666 61.94%),
       url(/assets/images/backgroundImage.png);
     background-repeat: no-repeat;
     margin-top: 1.8rem;
