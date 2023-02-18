@@ -50,6 +50,9 @@
 
 - **[It has a header for navigation]**
 - **[There is a headline section to know more about me and click on the links to connect with me directly]**
+- **[There is a works section to display my recent works]**
+- **[There is a skills section to showcase the skills I have in terms of programming]**
+- **[There is a form section to write me directly about any questions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,7 +99,6 @@ Install this project with:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[The body and footer]**
 - [ ] **[Desktop view of the project]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -113,7 +115,7 @@ Feel free to check the [issues page](https://github.com/Otegaa/setup-and-mobile-
 
 > Write a message to encourage readers to support your project
 
-If you like this project or would love to tell me ways to improve it, contact me on LinkedIn or Twitter
+If you like this project or would love to tell me ways to improve it, contact me on LinkedIn or Twitter. It will be a pleasure to hear from you and maybe collaborate on more projects.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
