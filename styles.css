@@ -155,13 +155,14 @@ body {
     line-height: 24px;
   }
 
-  .work-tools {
+  .work-tools ul {
     display: flex;
     gap: 13px;
     padding: 0;
+    list-style: none;
   }
 
-  .work-tools button {
+  .work-tools ul li {
     text-transform: capitalize;
     background: transparent;
     padding: 0.5rem 0.5rem;
@@ -180,7 +181,7 @@ body {
     transition: all 0.3s linear;
   }
 
-  .work-stack button {
+  .work-stack ul li {
     align-items: center;
     padding: 0.7rem 1rem;
     color: #fff;
@@ -198,8 +199,10 @@ body {
   }
 
   .work-2 {
-    background-image:
-      linear-gradient(#26262600 0.75%, #262626e6 61.94%),
+    background-image: linear-gradient(
+        rgba(38, 38, 38, 0) 0.75%,
+        rgba(38, 38, 38, 0.4) 61.94%
+      ),
       url(/assets/images/backgroundImage.png);
     background-repeat: no-repeat;
     margin-top: 1.8rem;
@@ -298,6 +301,10 @@ body {
     margin: 4rem 1.4rem;
   }
 
+  .tech-stack ul {
+    list-style: none;
+  }
+
   .stack-heading {
     display: flex;
     justify-content: center;
@@ -361,6 +368,7 @@ body {
     padding: 1rem 0 1rem 1rem;
     font-family: "Inter", sans-serif;
     font-size: 15px;
+    outline: none;
   }
 
   .form-info {
