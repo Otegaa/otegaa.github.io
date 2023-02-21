@@ -190,7 +190,18 @@ body {
   }
 
   .see-project button:hover {
-    background-color: #ff8834;
+    background-color: #fff5e1;
+    color: #f55800;
+  }
+
+  .see-project button:focus {
+    background-color: #e05304;
+    color: #fff;
+  }
+
+  .see-project button:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
   }
 
   .small-button {
@@ -283,7 +294,7 @@ body {
   }
 
   .details-btn:hover {
-    background-color: #ff8834;
+    background-color: #ff8743;
   }
 
   .details-btn a {
@@ -399,7 +410,18 @@ body {
   }
 
   .btn-submit:hover {
-    background-color: #ff8834;
+    background-color: #fff5e1;
+    color: #f55800;
+  }
+
+  .btn-submit:focus {
+    background-color: #e05304;
+    color: #fff;
+  }
+
+  .btn-submit:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
   }
 
   .footer-socials ul {
