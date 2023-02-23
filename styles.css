@@ -230,7 +230,8 @@ body {
   .work-5,
   .work-6,
   .work-7 {
-    background-image: linear-gradient(#26262600 0.75%, #26262666 61.94%),
+    background-image:
+      linear-gradient(#26262600 0.75%, #26262666 61.94%),
       url(/assets/images/backgroundImage.png);
     background-repeat: no-repeat;
     margin-top: 1.8rem;
@@ -568,7 +569,8 @@ body {
 
   .work-2,
   .work-5 {
-    background-image: linear-gradient(#26262600 0.75%, #26262666 61.94%),
+    background-image:
+      linear-gradient(#26262600 0.75%, #26262666 61.94%),
       url(/assets/images/backgroundImage.png);
     background-repeat: no-repeat;
     margin-top: 1.8rem;
@@ -576,7 +578,8 @@ body {
 
   .work-3,
   .work-6 {
-    background-image: linear-gradient(#26262600 0.75%, #26262666 61.94%),
+    background-image:
+      linear-gradient(#26262600 0.75%, #26262666 61.94%),
       url(/assets/images/backgroundImage2.png);
     background-repeat: no-repeat;
     margin-top: 1.8rem;
@@ -584,7 +587,8 @@ body {
 
   .work-4,
   .work-7 {
-    background-image: linear-gradient(#26262600 0.75%, #26262666 61.94%),
+    background-image:
+      linear-gradient(#26262600 0.75%, #26262666 61.94%),
       url(/assets/images/backgroundImage3.png);
     background-repeat: no-repeat;
     margin-top: 1.8rem;
