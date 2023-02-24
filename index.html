@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300;400;700&family=Poppins&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300;400;600;700&family=Poppins&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <title>Portfolio website</title>
@@ -16,26 +16,46 @@
   <body>
     <div class="container">
       <header class="main-header">
-        <div class="info">
-          <a href="#about-info">Ekiugbo Blessing</a>
-          <img
-            src="./assets/icons/Icon - Menu.svg"
-            alt="icon-menu"
-            class="info-image"
-          />
-        </div>
+        <nav>
+          <div class="info">
+            <a href="#about-info">Ekiugbo Blessing</a>
+            <img
+              src="./assets/icons/Icon - Menu.svg"
+              alt="icon-menu"
+              class="info-image"
+            />
+
+            <ul class="desktop-navbar">
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#about-info">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="/assets/nav-icons/Icon - Mail.svg"
+                    alt="email-icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </header>
 
       <main>
         <section class="headline">
           <div class="about" id="about-info">
-            <h1>Hey There! I'm Blessing.</h1>
-            <h2>I'm a software developer</h2>
-            <p>
-              I can help you build a product , feature or website. Look through
-              some of my work and experience! If you like what you see and have
-              a project you need coded, don't hesitate to contact me.
-            </p>
+            <div class="main-about">
+              <h1>
+                Hey There! <br />
+                I'm Blessing.
+              </h1>
+              <h2>I'm a software developer</h2>
+              <p>
+                I can help you build a product , feature or website. Look
+                through some of my work and experience! If you like what you see
+                and have a project you need coded, don't hesitate to contact me.
+              </p>
+            </div>
             <div class="social-icons">
               <ul>
                 <li>
@@ -78,17 +98,22 @@
         <section class="works">
           <div class="heading-works">
             <h1>My recent works</h1>
+            <img
+              src="./assets/images/Vector.png"
+              alt="work-underline"
+              class="underline"
+            />
           </div>
 
           <div class="work-details">
             <div class="work-1">
-              <div class="work-detail">
+              <div class="work-1__detail">
                 <img
                   src="./assets/images/Img Placeholder.png"
                   alt="multi-post stories"
                   class="img-placeholder"
                 />
-                <div class="main-detail">
+                <div class="main-detail gym-app__detail">
                   <h3>Multi-Post Stories</h3>
                   <p>
                     A daily selection of privately personalized reads; no
@@ -106,146 +131,154 @@
                   </div>
 
                   <div class="see-project">
-                    <button class="small-button">see project</button>
+                    <a href="#" class="small-button">see project</a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="work-2">
-              <div class="work-detail">
-                <div class="main-detail">
-                  <h4>professional art printing data</h4>
-                  <p class="paragraph">
-                    A daily selection of privately personalized reads; no
-                    accounts or sign-ups required. has been the industry's
-                    standard
-                  </p>
-                </div>
-                <div class="work-tools work-stack">
-                  <ul>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                  </ul>
-                </div>
-                <div class="see-project">
-                  <button class="large-button">see project</button>
+            <div class="all-works__detail">
+              <div class="work-2 work-common-class">
+                <div class="work-detail">
+                  <div class="main-detail">
+                    <h4>professional art printing data</h4>
+                    <p class="paragraph">
+                      A daily selection of privately personalized reads; no
+                      accounts or sign-ups required. has been the industry's
+                      standard
+                    </p>
+                    <div class="work-tools work-stack">
+                      <ul>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="see-project">
+                    <a href="#" class="large-button hide-button">see project</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="work-2">
-              <div class="work-detail">
-                <div class="main-detail">
-                  <h4>professional art printing data</h4>
-                  <p class="paragraph">
-                    A daily selection of privately personalized reads; no
-                    accounts or sign-ups required. has been the industry's
-                    standard
-                  </p>
-                </div>
-                <div class="work-tools work-stack">
-                  <ul>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                  </ul>
-                </div>
-                <div class="see-project">
-                  <button class="large-button">see project</button>
+              <div class="work-3 work-common-class">
+                <div class="work-detail">
+                  <div class="main-detail">
+                    <h4>professional art printing data</h4>
+                    <p class="paragraph">
+                      A daily selection of privately personalized reads; no
+                      accounts or sign-ups required. has been the industry's
+                      standard
+                    </p>
+                    <div class="work-tools work-stack">
+                      <ul>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="see-project">
+                    <a href="#" class="large-button hide-button">see project</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="work-2">
-              <div class="work-detail">
-                <div class="main-detail">
-                  <h4>professional art printing data</h4>
-                  <p class="paragraph">
-                    A daily selection of privately personalized reads; no
-                    accounts or sign-ups required. has been the industry's
-                    standard
-                  </p>
-                </div>
-                <div class="work-tools work-stack">
-                  <ul>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                  </ul>
-                </div>
-                <div class="see-project">
-                  <button class="large-button">see project</button>
+              <div class="work-4 work-common-class">
+                <div class="work-detail">
+                  <div class="main-detail">
+                    <h4>professional art printing data</h4>
+                    <p class="paragraph">
+                      A daily selection of privately personalized reads; no
+                      accounts or sign-ups required. has been the industry's
+                      standard
+                    </p>
+                    <div class="work-tools work-stack">
+                      <ul>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="see-project">
+                    <a href="#" class="large-button hide-button">see project</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="work-2">
-              <div class="work-detail">
-                <div class="main-detail">
-                  <h4>professional art printing data</h4>
-                  <p class="paragraph">
-                    A daily selection of privately personalized reads; no
-                    accounts or sign-ups required. has been the industry's
-                    standard
-                  </p>
-                </div>
-                <div class="work-tools work-stack">
-                  <ul>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                  </ul>
-                </div>
-                <div class="see-project">
-                  <button class="large-button">see project</button>
+              <div class="work-5 work-common-class">
+                <div class="work-detail">
+                  <div class="main-detail">
+                    <h4>professional art printing data</h4>
+                    <p class="paragraph">
+                      A daily selection of privately personalized reads; no
+                      accounts or sign-ups required. has been the industry's
+                      standard
+                    </p>
+                    <div class="work-tools work-stack">
+                      <ul>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="see-project">
+                    <a href="#" class="large-button hide-button">see project</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="work-2">
-              <div class="work-detail">
-                <div class="main-detail">
-                  <h4>professional art printing data</h4>
-                  <p class="paragraph">
-                    A daily selection of privately personalized reads; no
-                    accounts or sign-ups required. has been the industry's
-                    standard
-                  </p>
-                </div>
-                <div class="work-tools work-stack">
-                  <ul>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                  </ul>
-                </div>
-                <div class="see-project">
-                  <button class="large-button">see project</button>
+              <div class="work-6 work-common-class">
+                <div class="work-detail">
+                  <div class="main-detail">
+                    <h4>professional art printing data</h4>
+                    <p class="paragraph">
+                      A daily selection of privately personalized reads; no
+                      accounts or sign-ups required. has been the industry's
+                      standard
+                    </p>
+                    <div class="work-tools work-stack">
+                      <ul>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="see-project">
+                    <a href="#" class="large-button hide-button">see project</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="work-2">
-              <div class="work-detail">
-                <div class="main-detail">
-                  <h4>professional art printing data</h4>
-                  <p class="paragraph">
-                    A daily selection of privately personalized reads; no
-                    accounts or sign-ups required. has been the industry's
-                    standard
-                  </p>
-                </div>
-                <div class="work-tools work-stack">
-                  <ul>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                  </ul>
-                </div>
-                <div class="see-project">
-                  <button class="large-button">see project</button>
+              <div class="work-7 work-common-class">
+                <div class="work-detail">
+                  <div class="main-detail">
+                    <h4>professional art printing data</h4>
+                    <p class="paragraph">
+                      A daily selection of privately personalized reads; no
+                      accounts or sign-ups required. has been the industry's
+                      standard
+                    </p>
+                    <div class="work-tools work-stack">
+                      <ul>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="see-project">
+                    <a href="#" class="large-button hide-button">see project</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -254,24 +287,27 @@
 
         <section class="skills">
           <div class="all-skills">
-            <div class="skills-details">
-              <h2>About Me</h2>
-              <p>
-                Hello I'm a software developer! I can help you build a product ,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded,
-                don't hesitate to contact me.
-              </p>
-              <div class="details-btn">
-                <a
-                  href="./assets/images/CV - Blessing Oghenetega Ekiugbo (1).pdf"
-                  download
-                  >Get my Resume</a
-                >
+            <div class="about-skills-details">
+              <div class="skills-details">
+                <h2>About Me</h2>
+                <p>
+                  Hello I'm a software developer! I can help you build a product
+                  , feature or website Look through some of my work and
+                  experience! If you like what you see and have a project you
+                  need coded, don't hesitate to contact me.
+                </p>
+                <div class="details-btn">
+                  <a
+                    href="./assets/images/CV - Blessing Oghenetega Ekiugbo (1).pdf"
+                    download
+                    >Get my Resume</a
+                  >
+                </div>
               </div>
             </div>
+
             <div class="tech-stack">
-              <ul>
+              <ul class="stack-skills-heading">
                 <li>
                   <div class="stack-heading">
                     <img
@@ -331,44 +367,47 @@
         </section>
 
         <section class="contact-info">
-          <h3>
-           If you have an application you are interested in developing, a feature that you need built or a project that needs coding.
-          </h3>
-          <form
-            action="https://formspree.io/f/mqkoqlor"
-            method="POST"
-            class="contact-form"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Full name"
-              class="contact form-info"
-              required
-              maxlength="30"
-            />
-            <input
-              type="email"
-              name=""
-              id=""
-              placeholder="Email address"
-              class="contact form-info"
-              required
-            />
-            <textarea
-              name="text"
-              id="text"
-              cols="10"
-              rows="5"
-              placeholder="Enter text here"
-              class="contact text"
-              maxlength="500"
-              required
-            ></textarea>
-            <div class="submit">
-              <input type="submit" value="Get In Touch" class="btn-submit" />
-            </div>
-          </form>
+          <div class="contact-info-display">
+            <h3>
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </h3>
+            <form
+              action="https://formspree.io/f/mqkoqlor"
+              method="POST"
+              class="contact-form"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Full name"
+                class="contact form-info"
+                required
+                maxlength="30"
+              />
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Email address"
+                class="contact form-info"
+                required
+              />
+              <textarea
+                name="text"
+                id="text"
+                cols="10"
+                rows="5"
+                placeholder="Enter text here"
+                class="contact text"
+                maxlength="500"
+                required
+              ></textarea>
+              <div class="submit">
+                <input type="submit" value="Get In Touch" class="btn-submit" />
+              </div>
+            </form>
+          </div>
         </section>
 
         <section class="footer">

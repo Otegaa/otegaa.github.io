@@ -20,6 +20,7 @@ body {
   .info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .info a {
@@ -33,6 +34,10 @@ body {
 
   .info img {
     padding-right: 1rem;
+  }
+
+  .desktop-navbar {
+    display: none;
   }
 
   .about {
@@ -50,7 +55,13 @@ body {
     background-repeat: no-repeat;
   }
 
-  .about h1 {
+  .main-about {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .main-about h1 {
     color: #ff6b00;
     font-size: 56px;
     line-height: 64px;
@@ -59,7 +70,7 @@ body {
     text-transform: capitalize;
   }
 
-  .about h2 {
+  .main-about h2 {
     color: #fff;
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -68,7 +79,7 @@ body {
     line-height: 32px;
   }
 
-  .about p {
+  .main-about p {
     font-family: "Poppins", sans-serif;
     color: #fff;
     font-size: 16px;
@@ -93,6 +104,8 @@ body {
   }
 
   .works {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     margin: 0 1.4rem;
   }
@@ -108,23 +121,19 @@ body {
     text-transform: capitalize;
     margin-top: 8rem;
     margin-bottom: 5rem;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     color: #1c1a19;
-    padding-bottom: 3rem;
-    border-bottom: 1px solid #212121;
   }
 
   .underline {
-    margin-top: 2.2rem;
-    color: #fff;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    bottom: -20px;
   }
 
-  .work-details {
-    display: grid;
-    grid-template-rows: repeat(7, auto);
-  }
-
-  .work-detail {
+  .work-detail,
+  .work-1__detail {
     display: flex;
     flex-direction: column;
     gap: 13px;
@@ -169,12 +178,14 @@ body {
     border: 1px solid #8993a4;
   }
 
-  .see-project button {
+  .see-project a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
     border: transparent;
     background: #ff6b00;
     font-size: 17px;
     text-transform: capitalize;
-    align-items: center;
     font-family: "Inter", sans-serif;
     font-weight: 700;
     color: #fff;
@@ -189,17 +200,27 @@ body {
     border: transparent;
   }
 
-  .see-project button:hover {
-    background-color: #fff5e1;
-    color: #f55800;
+  .details-btn a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
   }
 
-  .see-project button:focus {
+  .see-project a:link,
+  .see-project:visited {
     background-color: #e05304;
     color: #fff;
   }
 
-  .see-project button:disabled {
+  .see-project a:hover {
+    background-color: #fff5e1;
+    color: #f55800;
+  }
+
+  .see-project a:disabled {
     background-color: #f4f1f0;
     color: #5b5957;
   }
@@ -209,11 +230,18 @@ body {
     border-radius: 5px;
   }
 
-  .work-2 {
+  .work-2,
+  .work-3,
+  .work-4,
+  .work-5,
+  .work-6,
+  .work-7 {
     background-image:
       linear-gradient(#26262600 0.75%, #26262666 61.94%),
       url(/assets/images/backgroundImage.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     margin-top: 1.8rem;
   }
 
@@ -243,7 +271,6 @@ body {
 
   .large-button {
     padding: 1rem 6rem;
-    width: 100%;
     margin-top: 1rem;
   }
 
@@ -258,10 +285,16 @@ body {
     background-repeat: no-repeat;
   }
 
-  .skills-details {
+  .about-skills-details {
     margin: 0 1.4rem 10rem;
     height: 32rem;
     border-bottom: 1px solid #fff;
+  }
+
+  .skills-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .skills-details h2 {
@@ -297,27 +330,19 @@ body {
     background-color: #ff8743;
   }
 
-  .details-btn a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: capitalize;
-    font-family: "Inter", sans-serif;
-    letter-spacing: 1px;
-    font-weight: 700;
-  }
-
   .tech-stack {
     margin: 4rem 1.4rem;
   }
 
-  .tech-stack ul {
+  .stack-skills-heading {
     list-style: none;
+    display: grid;
   }
 
   .stack-heading {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 6px;
   }
 
   .stack-heading img {
@@ -356,7 +381,11 @@ body {
     margin: 0 1.4rem 8rem;
   }
 
-  .contact-info h3 {
+  .contact-info-display {
+    display: grid;
+  }
+
+  .contact-info-display h3 {
     padding: 120px 0;
     text-align: center;
     font-family: "Inter", sans-serif;
@@ -392,7 +421,6 @@ body {
   .submit {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   .btn-submit {
@@ -450,5 +478,256 @@ body {
 
   .skills-details {
     height: 27rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    height: 4rem;
+    padding: 20px 0;
+  }
+
+  .info {
+    justify-content: space-around;
+  }
+
+  .info-image {
+    display: none;
+  }
+
+  .desktop-navbar {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .desktop-navbar li {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+  }
+
+  .about {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    background-image: url(/assets/images/Illustration-header.png);
+    background-position: 100% -10%;
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+
+  .main-about {
+    width: 27rem;
+    order: 2;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family: "Inter", sans-serif;
+  }
+
+  .main-about h2,
+  .main-about p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+  }
+
+  .social-icons ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .heading-works {
+    position: relative;
+  }
+
+  .heading-works h1 {
+    position: absolute;
+  }
+
+  .underline {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    bottom: -30px;
+  }
+
+  .small-button {
+    width: 100%;
+  }
+
+  .work-1__detail {
+    flex-direction: row;
+    gap: 17px;
+    max-width: 90%;
+  }
+
+  .img-placeholder {
+    height: 20rem;
+    width: 30rem;
+  }
+
+  .main-detail {
+    align-items: flex-start;
+  }
+
+  .gym-app__detail {
+    width: 50%;
+  }
+
+  .all-works__detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+  }
+
+  .work-common-class {
+    position: relative;
+  }
+
+  .large-button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .hide-button {
+    opacity: 0;
+  }
+
+  .work-2,
+  .work-5 {
+    background-image:
+      linear-gradient(#26262600 0.75%, #26262666 61.94%),
+      url(/assets/images/backgroundImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 1.8rem;
+  }
+
+  .work-3,
+  .work-6 {
+    background-image:
+      linear-gradient(#26262600 0.75%, #26262666 61.94%),
+      url(/assets/images/backgroundImage2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 1.8rem;
+  }
+
+  .work-4,
+  .work-7 {
+    background-image:
+      linear-gradient(
+        to bottom,
+        #26262600 0.75%,
+        #26262666 61.94%
+      ),
+      url(/assets/images/backgroundImage3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1.8rem;
+  }
+
+  .work-common-class:hover {
+    background-image: url(/assets/images/imgReplacer.png);
+  }
+
+  .work-common-class:hover .main-detail {
+    opacity: 0;
+  }
+
+  .work-common-class:hover .hide-button {
+    opacity: 1;
+  }
+
+  .skills {
+    background-image: url(/assets//images/About-img-desktop.png);
+    background-position: 100% 10%;
+    background-repeat: no-repeat;
+    background-size: 300px;
+  }
+
+  .skills-details {
+    width: 45%;
+  }
+
+  .stack-skills-heading {
+    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stack-skills_styled {
+    margin-top: 0;
+  }
+
+  .stack-skills ul {
+    display: grid;
+    align-items: start;
+  }
+
+  .contact-info {
+    height: 40rem;
+    margin: 0 5rem 0;
+  }
+
+  .contact-info-display {
+    gap: 3rem;
+    grid-template-columns: 40% 1fr;
+    height: 30rem;
+  }
+
+  .contact-info-display h3 {
+    padding: 120px 0 0;
+    text-align: start;
+    color: #262626;
+  }
+
+  .contact-form {
+    padding: 120px 0 0;
+  }
+
+  .submit {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 799px) and (max-width: 1200px) {
+  .about {
+    background-image: url(/assets/images/Illustration-header.png);
+    background-position: 100% -10%;
+    background-size: 300px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    background-image: url(/assets/images/Illustration-header.png);
+    background-position: 100% -10%;
+    background-size: 400px;
+  }
+
+  .all-works__detail {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 450px);
+  }
+
+  .skills {
+    background-image: url(/assets//images/About-img-desktop.png);
+    background-position: 100% 10%;
+    background-repeat: no-repeat;
+    background-size: 450px;
+  }
+
+  .img-placeholder {
+    height: 30rem;
+    width: 40rem;
+  }
+
+  .gym-app__detail {
+    width: 30%;
   }
 }

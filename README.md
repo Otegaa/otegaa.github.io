@@ -53,6 +53,7 @@
 - **[There is a works section to display my recent works]**
 - **[There is a skills section to showcase the skills I have in terms of programming]**
 - **[There is a form section to write me directly about any questions]**
+- **[The portfolio is mobile and desktop responsive]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,14 +93,6 @@ Install this project with:
 - GitHub: [@githubhandle](https://github.com/Otegaa)
 - Twitter: [@twitterhandle](https://twitter.com/O_tegaaa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/blessing-ekiugbo/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[Desktop view of the project]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
