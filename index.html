@@ -98,7 +98,11 @@
         <section class="works">
           <div class="heading-works">
             <h1>My recent works</h1>
-            <div class="underline"></div>
+            <img
+              src="./assets/images/Vector.png"
+              alt="work-underline"
+              class="underline"
+            />
           </div>
 
           <div class="work-details">
@@ -109,7 +113,7 @@
                   alt="multi-post stories"
                   class="img-placeholder"
                 />
-                <div class="main-detail">
+                <div class="main-detail gym-app__detail">
                   <h3>Multi-Post Stories</h3>
                   <p>
                     A daily selection of privately personalized reads; no
@@ -303,7 +307,7 @@
             </div>
 
             <div class="tech-stack">
-              <ul>
+              <ul class="stack-skills-heading">
                 <li>
                   <div class="stack-heading">
                     <img
@@ -363,45 +367,47 @@
         </section>
 
         <section class="contact-info">
-          <h3>
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding.
-          </h3>
-          <form
-            action="https://formspree.io/f/mqkoqlor"
-            method="POST"
-            class="contact-form"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Full name"
-              class="contact form-info"
-              required
-              maxlength="30"
-            />
-            <input
-              type="email"
-              name=""
-              id=""
-              placeholder="Email address"
-              class="contact form-info"
-              required
-            />
-            <textarea
-              name="text"
-              id="text"
-              cols="10"
-              rows="5"
-              placeholder="Enter text here"
-              class="contact text"
-              maxlength="500"
-              required
-            ></textarea>
-            <div class="submit">
-              <input type="submit" value="Get In Touch" class="btn-submit" />
-            </div>
-          </form>
+          <div class="contact-info-display">
+            <h3>
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </h3>
+            <form
+              action="https://formspree.io/f/mqkoqlor"
+              method="POST"
+              class="contact-form"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Full name"
+                class="contact form-info"
+                required
+                maxlength="30"
+              />
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Email address"
+                class="contact form-info"
+                required
+              />
+              <textarea
+                name="text"
+                id="text"
+                cols="10"
+                rows="5"
+                placeholder="Enter text here"
+                class="contact text"
+                maxlength="500"
+                required
+              ></textarea>
+              <div class="submit">
+                <input type="submit" value="Get In Touch" class="btn-submit" />
+              </div>
+            </form>
+          </div>
         </section>
 
         <section class="footer">

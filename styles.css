@@ -126,11 +126,10 @@ body {
   }
 
   .underline {
-    border-bottom: 1px solid #212121;
     display: inline-block;
     position: relative;
     width: 100%;
-    bottom: -10px;
+    bottom: -20px;
   }
 
   .work-details {
@@ -230,10 +229,11 @@ body {
   .work-5,
   .work-6,
   .work-7 {
-    background-image:
-      linear-gradient(#26262600 0.75%, #26262666 61.94%),
+    background-image: linear-gradient(#26262600 0.75%, #26262666 61.94%),
       url(/assets/images/backgroundImage.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     margin-top: 1.8rem;
   }
 
@@ -336,7 +336,7 @@ body {
     margin: 4rem 1.4rem;
   }
 
-  .tech-stack ul {
+  .stack-skills-heading {
     list-style: none;
     display: grid;
   }
@@ -344,7 +344,7 @@ body {
   .stack-heading {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 6px;
   }
 
   .stack-heading img {
@@ -381,10 +381,13 @@ body {
     height: 50rem;
     background-color: #fff;
     margin: 0 1.4rem 8rem;
+  }
+
+  .contact-info-display {
     display: grid;
   }
 
-  .contact-info h3 {
+  .contact-info-display h3 {
     padding: 120px 0;
     text-align: center;
     font-family: "Inter", sans-serif;
@@ -536,14 +539,18 @@ body {
   }
 
   .heading-works {
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
+    position: relative;
+  }
+
+  .heading-works h1 {
+    position: absolute;
   }
 
   .underline {
+    position: absolute;
+    left: 50%;
     width: 50%;
-    bottom: 20px;
+    bottom: -30px;
   }
 
   .work-1__detail {
@@ -561,41 +568,67 @@ body {
     align-items: flex-start;
   }
 
+  .gym-app__detail {
+    width: 50%;
+  }
+
   .all-works__detail {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.4rem;
   }
 
+  .large-button {
+    display: none;
+  }
+
   .work-2,
   .work-5 {
-    background-image:
-      linear-gradient(#26262600 0.75%, #26262666 61.94%),
+    background-image: linear-gradient(#26262600 0.75%, #26262666 61.94%),
       url(/assets/images/backgroundImage.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     margin-top: 1.8rem;
+  }
+
+  .work-2:hover,
+  .work-5:hover {
+    background-image: url(/assets/images/backgroundImage.png);
   }
 
   .work-3,
   .work-6 {
-    background-image:
-      linear-gradient(#26262600 0.75%, #26262666 61.94%),
+    background-image: linear-gradient(#26262600 0.75%, #26262666 61.94%),
       url(/assets/images/backgroundImage2.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     margin-top: 1.8rem;
+  }
+
+  .work-3:hover,
+  .work-6:hover {
+    background-image: url(/assets/images/backgroundImage2.png);
   }
 
   .work-4,
   .work-7 {
-    background-image:
-      linear-gradient(#26262600 0.75%, #26262666 61.94%),
+    background-image: linear-gradient(
+        to bottom,
+        #26262600 0.75%,
+        #26262666 61.94%
+      ),
       url(/assets/images/backgroundImage3.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     margin-top: 1.8rem;
   }
 
-  .large-button {
-    display: none;
+  .work-4:hover,
+  .work-7:hover {
+    background-image: url(/assets/images/backgroundImage3.png);
   }
 
   .skills {
@@ -609,22 +642,38 @@ body {
     width: 45%;
   }
 
-  .tech-stack ul {
-    gap: 1rem;
+  .stack-skills-heading {
+    gap: 5rem;
     grid-template-columns: repeat(3, 1fr);
   }
 
   .stack-skills_styled {
     margin-top: 0;
   }
+  .stack-skills ul {
+    display: grid;
+    align-items: start;
+  }
 
   .contact-info {
+    height: 40rem;
+    margin: 0 5rem 0;
+  }
+
+  .contact-info-display {
     gap: 3rem;
     grid-template-columns: 40% 1fr;
+    height: 30rem;
+  }
+
+  .contact-info-display h3 {
+    padding: 120px 0 0;
+    text-align: start;
+    color: #262626;
   }
 
   .contact-form {
-    padding: 120px 0;
+    padding: 120px 0 0;
   }
 
   .submit {
@@ -650,6 +699,7 @@ body {
 
   .all-works__detail {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 450px);
   }
 
   .skills {
@@ -657,5 +707,14 @@ body {
     background-position: 100% 10%;
     background-repeat: no-repeat;
     background-size: 450px;
+  }
+
+  .img-placeholder {
+    height: 30rem;
+    width: 40rem;
+  }
+
+  .gym-app__detail {
+    width: 30%;
   }
 }
