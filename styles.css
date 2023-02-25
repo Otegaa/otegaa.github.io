@@ -35,6 +35,7 @@ body {
 
   .info img {
     padding-right: 1rem;
+    animation: moveInRight 2s ease-in;
   }
 
   .desktop-navbar {
@@ -499,6 +500,7 @@ body {
     display: flex;
     list-style: none;
     align-items: center;
+    animation: moveInRight 2s ease-in;
   }
 
   .desktop-navbar li {
@@ -735,6 +737,17 @@ body {
     transform: translateX(-50px);
   }
 
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
   100% {
     opacity: 1;
     transform: translateX(0);
