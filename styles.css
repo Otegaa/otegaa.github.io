@@ -202,6 +202,10 @@ body {
     border: transparent;
   }
 
+  .details-btn {
+    margin-top: 1.3rem;
+  }
+
   .details-btn a {
     text-decoration: none;
     color: #fff;
@@ -209,6 +213,19 @@ body {
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
     font-weight: 700;
+    background-color: #ff6b00;
+    width: 11rem;
+    margin-top: 1.3rem;
+    padding: 0.7rem 0.4rem;
+    text-align: center;
+    font-size: 17px;
+    transition: all 0.3s linear;
+    border-radius: 5px;
+  }
+
+  .details-btn a:hover {
+    background-color: #fff5e1;
+    color: #f55800;
   }
 
   .see-project a:link,
@@ -315,21 +332,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-  }
-
-  .details-btn {
-    background-color: #ff6b00;
-    width: 11rem;
-    margin-top: 1.3rem;
-    padding: 0.7rem 0.4rem;
-    text-align: center;
-    font-size: 17px;
-    transition: all 0.3s linear;
-    border-radius: 5px;
-  }
-
-  .details-btn:hover {
-    background-color: #ff8743;
   }
 
   .tech-stack {
